@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,5 @@ Route::get('/otherpage', function () {
     $links = config('store.someLinks');
     return view('other', compact('links'));
 });
+
+Route::get('/' [PageController::class, 'index'])-> name("welcome");
